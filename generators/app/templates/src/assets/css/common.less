@@ -1,0 +1,81 @@
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  border-radius: 3px;
+}
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.3);
+}
+// 去掉IE密码输入框的小眼睛
+::-ms-clear,
+::-ms-reveal {
+  display: none;
+}
+//去掉Chrome浏览器记住密码时黄色背景
+input:-webkit-autofill {
+  box-shadow: 0 0 0 30px #fff inset !important;
+}
+
+// 布局
+html,body,#root{
+  height: 100%;
+  overflow: hidden;
+  background: #F5F8FC;
+}
+
+// 按钮
+.ant-btn-link{
+  &.slock-btn--red{
+    &:hover,&:focus{
+      color: #FF6D6D;
+    }
+    &,&:active,&.active{
+      color: #EB3B3B;
+    }
+    &[disabled]{
+      color: #ccc;
+    }
+  }
+}
+
+// 按钮tips提示
+.@{project}-btn__tip{
+  position: relative;
+  &__info{
+    position: absolute;
+    display: none!important;
+    top: -36px;
+    left: 50%;
+    // height: 30px;
+    font-size: 12px;
+    color: #fff;
+    line-height: 30px;
+    padding: 0 10px;
+    background: rgba(0, 0, 0, 0.8);
+    transform: translateX(-50%);
+    border-radius: 2px;
+    transition: all 0.28s ease-in-out;
+    &::after{
+      position: absolute;
+      bottom: -6px;
+      left: 50%;
+      content: "";
+      border: 6px solid rgba(0, 0, 0, 0);
+      border-bottom: 0 none;
+      border-top: 7px solid rgba(0, 0, 0, 0.8);
+      margin-left: -3px;
+    }
+  }
+  &[disabled]:hover{
+    .@{project}-btn__tip__info{
+      display: block!important;
+    }
+  }
+}

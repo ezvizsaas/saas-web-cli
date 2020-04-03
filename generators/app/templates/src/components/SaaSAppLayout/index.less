@@ -1,0 +1,71 @@
+.saas-app-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  &__header {
+    @sizeH: 48px;
+    display: flex;
+    width: 100%;
+    height: @sizeH;
+    line-height: @sizeH;
+    background: #fff;
+    box-shadow: 0 0 15px 0 rgba(102, 102, 102, 0.1);
+  }
+  &__logo {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    padding: 0 24px;
+    img {
+      @size: 24px;
+      height: @size;
+      width: @size;
+      margin: 12px 8px 12px 0;
+      vertical-align: top;
+    }
+    &:hover {
+      color: #333;
+      opacity: 0.8;
+    }
+  }
+  &__right {
+    display: flex;
+    width: 100%;
+    flex: 1;
+    font-size: 14px;
+    justify-content: flex-end;
+  }
+  &__nick {
+    color: #333;
+    padding: 0 40px;
+  }
+  &__logout {
+    padding: 0 23px 0 25px;
+    .anticon {
+      margin-right: 9px;
+    }
+    .ant-btn-link {
+      color: #666;
+    }
+  }
+}
+.saas-app-layout-main {
+  height: 100%;
+  min-height: 500px;
+  overflow: auto;
+  margin: 0px 30px 30px 20px;
+  background: #fff;
+}
+.saas-app-layout__header__h2 {
+  height: 64px;
+  font-size: 14px;
+  color: #333333;
+  line-height: 64px;
+  margin-left: 40px;
+  img {
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+  }
+}
