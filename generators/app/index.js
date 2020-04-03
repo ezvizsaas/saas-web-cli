@@ -7,7 +7,6 @@ module.exports = class SaaSGenerator extends Generator {
   constructor(args, opts) {
     // Calling the super constructor is important so our generator is correctly set up
     super(args, opts);
-    this.log('如果项目文件夹已经创建，项目名称请输入“.”！');
   }
 
 
@@ -35,12 +34,6 @@ module.exports = class SaaSGenerator extends Generator {
         name: 'htmlTitle',
         message: '页面的title',
         default: 'saas小应用'
-      },
-      {
-        type: 'input',
-        name: 'hompage',
-        message: 'hompage',
-        default: '.'
       },
       {
         type: 'list',

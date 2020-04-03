@@ -1,4 +1,4 @@
-projectName=11aa
+projectName=<%= projectName %>
 npm config get registry https://registry.npm.taobao.org/
 npm install
 npm run build
