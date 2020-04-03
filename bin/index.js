@@ -3,10 +3,10 @@ const program = require("commander");
 const path = require("path");
 // const color = require('colors-cli');
 
-// program
-//   .version('1.0.0')
-//   .description('Fake package manager')
-//   .parse(process.argv);
+program
+  .version('1.0.0')
+  .description('Fake package manager')
+  .parse(process.argv);
 const env = yeoman.createEnv();
 
 // program.on('--help', function () {
