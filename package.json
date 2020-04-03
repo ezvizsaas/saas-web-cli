@@ -7,7 +7,7 @@
     "yeoman-generator"
   ],
   "bin": {
-    "saas-app": "bin/index.js"
+    "saas-web-cli": "bin/index.js"
   },
   "files": [
     "generators"
