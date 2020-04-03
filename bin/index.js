@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const yeoman = require('yeoman-environment');
 const program = require("commander");
 const path = require("path");
