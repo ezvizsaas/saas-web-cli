@@ -7,7 +7,7 @@
     "yeoman-generator"
   ],
   "bin": {
-    "saas-app": "bin/index.js"
+    "saas-web-cli": "bin/index.js"
   },
   "files": [
     "generators"
@@ -19,9 +19,7 @@
   "author": "suhe <suhe@hikvision.com.cn>",
   "license": "ISC",
   "dependencies": {
-    "@ant-design/icons": "^4.0.3",
-    "colors-cli": "^1.0.23",
-    "isomorphic-fetch": "^2.2.1",
+    "commander": "^2.20.0",
     "yeoman-generator": "^4.6.0"
   }
 }
