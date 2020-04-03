@@ -61,19 +61,17 @@ module.exports = class SaaSGenerator extends Generator {
     if (!this.saasOption.createPro) {
       destinationPath = "";
     }
-    console.log("templatePath", this.templatePath());
-    console.log("destinationPath", this.destinationPath(destinationPath));
     this.fs.copyTpl(
       this.templatePath(),
       this.destinationPath(destinationPath),
       this.saasOption
     );
-    console.log("!!!!!!!!!");
+   
   }
 
   install() {
-    // this.destinationRoot(this.saasOption.name);
-    // this.npmInstall();
+    this.destinationRoot(this.saasOption.name);
+    this.npmInstall();
   }
   // add your own methods
 };
